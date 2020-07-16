@@ -1,0 +1,15 @@
+<p>Lista de peliculas</p>
+<table class="table table-border">
+    <thead class="bg-primary"> 
+    <tr>
+        <th>Nombre</th>
+        <th>estreno</th>
+        <th>Director</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let peli of listaPeliculas">
+        <td>{{peli.nombre}}</td>
+        <td>{{peli.anioEstreno}}</td>
+        <td>{{peli.director}}</td>
+    </tr>
+</table>
